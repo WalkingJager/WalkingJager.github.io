@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT, Unity3d, Cocos2d-x" />
+  <meta name="keywords" content="UGUI," />
 
 
 
@@ -59,16 +59,25 @@
 
 
 
-<meta name="description" content="It will be never too late to fight">
+<meta name="description" content="环境：Unity3d 5.3
+通常我们在做用Unity做2D游戏时，会将摄像机的Projection设置为Orthographic（正交投影），在此模式下场景中的物体不会因为摄像机距离的远近而产生远大近小的效果，都是一样的大小。因此2D游戏中Main Camera默认设置如下图：
+图中红色方框里的Position是2D摄像机的默认设置。Size定义了摄像机的视口大小，表示从屏幕的中心点到顶部的距离">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://WalkingJager.github.io/post/test/index.html">
+<meta property="og:title" content="关于Unity 2D Camera Size的一些理解">
+<meta property="og:url" content="http://WalkingJager.github.io/post/unity3d/ugui/about-camera-size/index.html">
 <meta property="og:site_name" content="Walking Jager">
-<meta property="og:description" content="It will be never too late to fight">
-<meta property="og:updated_time" content="2016-03-27T06:53:55.747Z">
+<meta property="og:description" content="环境：Unity3d 5.3
+通常我们在做用Unity做2D游戏时，会将摄像机的Projection设置为Orthographic（正交投影），在此模式下场景中的物体不会因为摄像机距离的远近而产生远大近小的效果，都是一样的大小。因此2D游戏中Main Camera默认设置如下图：
+图中红色方框里的Position是2D摄像机的默认设置。Size定义了摄像机的视口大小，表示从屏幕的中心点到顶部的距离">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/camera_ortho_settings.png">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/camera_1.jpg">
+<meta property="og:updated_time" content="2016-03-27T06:53:55.757Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="It will be never too late to fight">
+<meta name="twitter:title" content="关于Unity 2D Camera Size的一些理解">
+<meta name="twitter:description" content="环境：Unity3d 5.3
+通常我们在做用Unity做2D游戏时，会将摄像机的Projection设置为Orthographic（正交投影），在此模式下场景中的物体不会因为摄像机距离的远近而产生远大近小的效果，都是一样的大小。因此2D游戏中Main Camera默认设置如下图：
+图中红色方框里的Position是2D摄像机的默认设置。Size定义了摄像机的视口大小，表示从屏幕的中心点到顶部的距离">
+<meta name="twitter:image" content="http://WalkingJager.github.io/images/unity3d/ugui/camera_ortho_settings.png">
 
 
 
@@ -86,7 +95,7 @@
   };
 </script>
 
-  <title> test | Walking Jager </title>
+  <title> 关于Unity 2D Camera Size的一些理解 | Walking Jager </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -256,7 +265,7 @@
             
             
               
-                test
+                关于Unity 2D Camera Size的一些理解
               
             
           </h1>
@@ -268,19 +277,38 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-22T17:13:22+08:00" content="2016-03-22">
-              2016-03-22
+            <time itemprop="dateCreated" datetime="2016-03-24T09:29:57+08:00" content="2016-03-24">
+              2016-03-24
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Unity3d/" itemprop="url" rel="index">
+                    <span itemprop="name">Unity3d</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/post/test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="post/test/" itemprop="commentsCount"></span>
+                <a href="/post/unity3d/ugui/about-camera-size/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="post/unity3d/ugui/about-camera-size/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -290,7 +318,7 @@
 
           
           
-             <span id="/post/test/" class="leancloud_visitors" data-flag-title="test">
+             <span id="/post/unity3d/ugui/about-camera-size/" class="leancloud_visitors" data-flag-title="关于Unity 2D Camera Size的一些理解">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -311,7 +339,13 @@
       
 
       
-        
+        <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">环境：Unity3d 5.3</span><br></pre></td></tr></table></figure>
+<p>通常我们在做用Unity做2D游戏时，会将摄像机的Projection设置为<font color="#2E8B57"><strong>Orthographic（正交投影）</strong></font>，在此模式下场景中的物体不会因为摄像机距离的远近而产生远大近小的效果，都是一样的大小。因此2D游戏中<font color="#2E8B57"><strong>Main Camera</strong></font>默认设置如下图：</p>
+<p><center><img src="/images/unity3d/ugui/camera_ortho_settings.png" alt=""></center><br>图中红色方框里的Position是2D摄像机的默认设置。<font color="#2E8B57"><strong>Size</strong></font>定义了摄像机的视口大小，表示从屏幕的中心点到顶部的距离，单位是<font color="#2E8B57"><em>units</em></font>。换而言之，就是视口高度的一半，而视口的宽度是通过<font color="#2E8B57"><strong>aspect（宽高比）</strong></font>来计算：<center><img src="/images/unity3d/ugui/camera_1.jpg" alt=""></center><br>2D中摄像机的Size大小决定了我们实际上可以看到游戏内容的多少，如果Size属性值等于当前屏幕高度units一半时，摄像机大小则正好与屏幕大小相等，这里的units是通过像素到单位比即<font color="#2E8B57"><strong>Pixels To Units</strong></font>换算后的值。</p>
+<p>问题：如何让背景图片正确的占满屏幕？<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">前提：所有的图片Import Settings中的Pixels To Units保持默认100</span><br></pre></td></tr></table></figure></p>
+<p>假设我们游戏的参考分辨率是1136x640（16：9），背景图片的大小为2048x640，则摄像机的Size大小为3.2<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">640(图片高度) / 100(Pixels To Units) / 2(摄像机Size为屏幕高度的一半) = 3.2</span><br></pre></td></tr></table></figure></p>
+<p>同理游戏的参考分辨率是640x1136（9：16），背景图片的大小为640x2048，则摄像机的Size大小为10.24<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2048(图片高度) / 100(Pixels To Units) / 2(摄像机Size为屏幕高度的一半) = 10.24</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -323,21 +357,27 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/UGUI/" rel="tag">#UGUI</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/simple-markdown/" rel="next" title="simple markdown">
-                <i class="fa fa-chevron-left"></i> simple markdown
+              <a href="/post/unity3d/ugui/ugui-scrollview/" rel="next" title="UGUI之自定义ScrollView">
+                <i class="fa fa-chevron-left"></i> UGUI之自定义ScrollView
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/test2/" rel="prev" title="test2">
-                test2 <i class="fa fa-chevron-right"></i>
+              <a href="/post/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -387,8 +427,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="post/test/"
-           data-title="test" data-url="http://WalkingJager.github.io/post/test/">
+      <div class="ds-thread" data-thread-key="post/unity3d/ugui/about-camera-size/"
+           data-title="关于Unity 2D Camera Size的一些理解" data-url="http://WalkingJager.github.io/post/unity3d/ugui/about-camera-size/">
       </div>
     
   </div>

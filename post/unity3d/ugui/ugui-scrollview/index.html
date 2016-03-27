@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT, Unity3d, Cocos2d-x" />
+  <meta name="keywords" content="UGUI," />
 
 
 
@@ -59,16 +59,39 @@
 
 
 
-<meta name="description" content="It will be never too late to fight">
+<meta name="description" content="环境：Unity3d 5.3
+如果你是从cocos2d-x转入untiy，肯定对ScrollView不陌生，知道ScrollView的原理：将大的展示内容content放在一个小的剪裁区域（Clipping Region）中，并支持拖动。在cocos2d-x中官方已经为我们封装好了，拿来用就可以了，同样的，在unity中官方也实现了该控件。
+ 
+
+但现在我们不奉行拿来主义，而是要重复造轮子，看看这">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://WalkingJager.github.io/post/test/index.html">
+<meta property="og:title" content="UGUI之自定义ScrollView">
+<meta property="og:url" content="http://WalkingJager.github.io/post/unity3d/ugui/ugui-scrollview/index.html">
 <meta property="og:site_name" content="Walking Jager">
-<meta property="og:description" content="It will be never too late to fight">
-<meta property="og:updated_time" content="2016-03-27T06:53:55.747Z">
+<meta property="og:description" content="环境：Unity3d 5.3
+如果你是从cocos2d-x转入untiy，肯定对ScrollView不陌生，知道ScrollView的原理：将大的展示内容content放在一个小的剪裁区域（Clipping Region）中，并支持拖动。在cocos2d-x中官方已经为我们封装好了，拿来用就可以了，同样的，在unity中官方也实现了该控件。
+ 
+
+但现在我们不奉行拿来主义，而是要重复造轮子，看看这">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/1.jpg">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/3.jpg">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/4.jpg">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/5.jpg">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/6.jpg">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/7.jpg">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/8.jpg">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/9.jpg">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/11.jpg">
+<meta property="og:image" content="http://WalkingJager.github.io/images/unity3d/ugui/10.jpg">
+<meta property="og:updated_time" content="2016-03-27T06:53:55.762Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="It will be never too late to fight">
+<meta name="twitter:title" content="UGUI之自定义ScrollView">
+<meta name="twitter:description" content="环境：Unity3d 5.3
+如果你是从cocos2d-x转入untiy，肯定对ScrollView不陌生，知道ScrollView的原理：将大的展示内容content放在一个小的剪裁区域（Clipping Region）中，并支持拖动。在cocos2d-x中官方已经为我们封装好了，拿来用就可以了，同样的，在unity中官方也实现了该控件。
+ 
+
+但现在我们不奉行拿来主义，而是要重复造轮子，看看这">
+<meta name="twitter:image" content="http://WalkingJager.github.io/images/unity3d/ugui/1.jpg">
 
 
 
@@ -86,7 +109,7 @@
   };
 </script>
 
-  <title> test | Walking Jager </title>
+  <title> UGUI之自定义ScrollView | Walking Jager </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -256,7 +279,7 @@
             
             
               
-                test
+                UGUI之自定义ScrollView
               
             
           </h1>
@@ -268,19 +291,38 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-22T17:13:22+08:00" content="2016-03-22">
-              2016-03-22
+            <time itemprop="dateCreated" datetime="2016-03-23T13:25:26+08:00" content="2016-03-23">
+              2016-03-23
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Unity3d/" itemprop="url" rel="index">
+                    <span itemprop="name">Unity3d</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/post/test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="post/test/" itemprop="commentsCount"></span>
+                <a href="/post/unity3d/ugui/ugui-scrollview/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="post/unity3d/ugui/ugui-scrollview/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -290,7 +332,7 @@
 
           
           
-             <span id="/post/test/" class="leancloud_visitors" data-flag-title="test">
+             <span id="/post/unity3d/ugui/ugui-scrollview/" class="leancloud_visitors" data-flag-title="UGUI之自定义ScrollView">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -311,7 +353,79 @@
       
 
       
-        
+        <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">环境：Unity3d 5.3</span><br></pre></td></tr></table></figure>
+<p>如果你是从cocos2d-x转入untiy，肯定对ScrollView不陌生，知道ScrollView的原理：将大的展示内容content放在一个小的剪裁区域（Clipping Region）中，并支持拖动。在cocos2d-x中官方已经为我们封装好了，拿来用就可以了，同样的，在unity中官方也实现了该控件。</p>
+<center> <img src="/images/unity3d/ugui/1.jpg" alt=""></center>
+
+<p>但现在我们不奉行拿来主义，而是要重复造轮子，看看这轮子该如何造。<br></p>
+<p><em>开始造轮子咯，Let’s Go…</em></p>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><p>通常使用ScrollView时更多的时候是动态的添加内容，比如在背包中添加一个新的物品等。如果内容一开始就是固定的，我们完全可以用Prefab在编辑器里面完成，不需要写一行代码。而对于内容可变的，就需要通过代码来控制了，这时就可以使用本文的方法来制作。</p>
+<h3 id="创建ScrollView"><a href="#创建ScrollView" class="headerlink" title="创建ScrollView"></a>创建ScrollView</h3><h4 id="属性：Rect-Transform"><a href="#属性：Rect-Transform" class="headerlink" title="属性：Rect Transform"></a>属性：Rect Transform</h4><p>新建一个2D的工程，创建Panel：</p>
+<ul>
+<li>Panel命名为<font color="#2E8B57"><strong>ScrollView</strong></font></li>
+<li>Anchor设置为<font color="#2E8B57"><strong>middle center</strong></font></li>
+<li>设置Width为<font color="#2E8B57"><strong>320</strong></font>，Height为<font color="#2E8B57"><strong>630</strong></font></li>
+</ul>
+<p>如图所示：</p>
+<center> <img src="/images/unity3d/ugui/3.jpg" alt=""></center>
+
+<h3 id="创建Content"><a href="#创建Content" class="headerlink" title="创建Content"></a>创建Content</h3><h4 id="属性：Rect-Transform-1"><a href="#属性：Rect-Transform-1" class="headerlink" title="属性：Rect Transform"></a>属性：Rect Transform</h4><p>选中控件ScrollView右击选择Create Empty，创建一个空的GameObject用于存放我们的列表子项，命名为<font color="#2E8B57"><strong>Content</strong></font>：</p>
+<ul>
+<li>Anchor为<font color="#2E8B57"><strong>top stretch</strong></font>，使其可以根据parent的宽度自动缩放 <br>可能有同学会问，为什么不可以选择middle或bottom stretch？其实是可以的，但是如果选择middle或bottom后，对计算content的大小是没有影响的，位置却需要我们手动去调整，比较麻烦。另外，ScrollView通常内容是从顶部往下填充，top stretch可以自动的将Content固定在顶部。</li>
+<li>中心点Pivot设为<font color="#2E8B57"><strong>（0，1）</strong></font> <br>此时中心点Pivot位于parent的左上角</li>
+<li><font color="#2E8B57"><strong>Left：0  PosY：0  Right：20  Height： 100</strong></font> <br>Right设为20是为后面添加的Scrollbar预留的宽度。这里Height值可以是任意大于0的值，后面会通过脚本动态设置。</li>
+</ul>
+<p>如图所示：</p>
+<center><img src="/images/unity3d/ugui/4.jpg" alt=""></center>
+
+<h4 id="添加Grid-Layout-Group组件"><a href="#添加Grid-Layout-Group组件" class="headerlink" title="添加Grid Layout Group组件"></a>添加Grid Layout Group组件</h4><p>给Content添加Grid Layout Group组件：</p>
+<ul>
+<li>Cell Size为<font color="#2E8B57"><strong>（300，100）</strong></font> <br>这里设置我们的子项大小为（300，100）</li>
+<li>Start Axis为<font color="#2E8B57"><strong>Vertical</strong></font> <br>因为我们演示的是垂直布局的ScrollView</li>
+<li>Constraint为<font color="#2E8B57"><strong>Fixed Column Count</strong></font>，Constraint Count为<font color="#2E8B57"><strong>1</strong></font> <br>主要我们为了让ScrollView为单列多行显示<br>如图所示：<center><img src="/images/unity3d/ugui/5.jpg" alt=""></center>
+
+
+</li>
+</ul>
+<h3 id="创建Scrollbar"><a href="#创建Scrollbar" class="headerlink" title="创建Scrollbar"></a>创建Scrollbar</h3><p>不一定非要添加Scrollbar，但为了美观，主要是学习，试试也无妨。<br>在ScrollView控件下添加Scrollbar，与Content为兄弟关系</p>
+<h4 id="属性：Rect-Transform-2"><a href="#属性：Rect-Transform-2" class="headerlink" title="属性：Rect Transform"></a>属性：Rect Transform</h4><ul>
+<li>Anchor为<font color="#2E8B57"><strong>right stretch</strong></font></li>
+<li>中心点Pivot设为<font color="#2E8B57"><strong>（1，1）</strong></font></li>
+<li><font color="#2E8B57"><strong>Pos X：0  Top：0  Width：20  Bottom： 0</strong></font>
+
+</li>
+</ul>
+<h4 id="属性：Scrollbar-Script"><a href="#属性：Scrollbar-Script" class="headerlink" title="属性：Scrollbar(Script)"></a>属性：Scrollbar(Script)</h4><ul>
+<li>Direction为<font color="#2E8B57"><strong>Bottom ToTop</strong></font></li>
+<li>Value为<font color="#2E8B57"><strong>1</strong></font> <br>因为垂直布局时，内容是从上往下添加的，设置为1使滑块位于顶部</li>
+<li><font color="#2E8B57"><strong>Pos X：0  Top：0  Width：20  Bottom： 0</strong></font>
+
+</li>
+</ul>
+<p>如图所示：</p>
+<center><img src="/images/unity3d/ugui/6.jpg" alt=""></center>
+
+<h3 id="剪裁区域"><a href="#剪裁区域" class="headerlink" title="剪裁区域"></a>剪裁区域</h3><p>前面已经提过到，ScrollView需要一个剪裁区域，在Unity中可以使用Mask组件。选中ScrollView控件添加组件<font color="#2E8B57"><strong>Mask</strong></font></p>
+<center><img src="/images/unity3d/ugui/7.jpg" alt=""></center>
+
+<h3 id="支持拖动"><a href="#支持拖动" class="headerlink" title="支持拖动"></a>支持拖动</h3><p>不能拖动还能是ScrollView么？！为ScrollView控件添加组件<font color="#2E8B57"><strong>Scroll Rect</strong></font>。</p>
+<ul>
+<li>将Content控件拖拽到<font color="#2E8B57"><strong>Content</strong></font>中</li>
+<li>取消<font color="#2E8B57"><strong>Horizontal</strong></font>勾选</li>
+<li>将Scrollbar控件拖拽到<font color="#2E8B57"><strong>Vertical Scrollbar</strong></font>中</li>
+</ul>
+<p>效果如图所示：</p>
+<center><img src="/images/unity3d/ugui/8.jpg" alt=""></center>
+
+<h3 id="创建内容子项Prefab"><a href="#创建内容子项Prefab" class="headerlink" title="创建内容子项Prefab"></a>创建内容子项Prefab</h3><p>这里的子项只是为了demo演示，在实际项目中可以创建任意的内容：</p>
+<ul>
+<li>在Canvas中创建Empty GameObject，命名为<font color="#2E8B57"><strong>ViewItem</strong></font></li>
+<li>Anchor为<font color="#2E8B57"><strong>center middle</strong></font> <br>实际上这里可以不用设置Anchor，因为在ViewItem添加到Content中后，其Grid Layout Group组件会修改ViewItem的Rect Transform组件。如上设置是为了便于创建ViewItem Prefab。</li>
+<li><font color="#2E8B57"><strong>Width：300 Height：100</strong></font> <br> 同理这里也是方便我们创建Prefab。</li>
+</ul>
+<p>空的ViewItem不便于观察，那咱们就给它添加一个<font color="#2E8B57"><strong>Image</strong></font>组件。 <br>这里我们为其添加一张支持九宫格缩放的Sprite。将ViewItem控件拖拽到目录<font color="#2E8B57"><strong>Resources/Prefabs</strong></font>中，这样我们就可以利用<font color="#2E8B57"><strong>Instantiate</strong></font>动态实例化。<br>现在我们可以删除Canvas下面的ViewItem了。<br>如图所示：</p>
+<center><img src="/images/unity3d/ugui/9.jpg" alt=""></center><br>ViewItem最终效果：<br><center><img src="/images/unity3d/ugui/11.jpg" alt=""></center><br>至此，我们的ScrollView已经快大功告成，不过还查一小步：根据子项的个数自动调整尺寸，那就需要借助脚本了。<br>为<font color="#2E8B57"><strong>Content</strong></font>添加C#脚本<font color="#2E8B57"><strong>ContentController.cs</strong></font>，内容如下：<br><figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> UnityEngine.UI;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ContentController</span> : <span class="title">MonoBehaviour</span> &#123;</span><br><span class="line"></span><br><span class="line">	List&lt;GameObject&gt; listItem = <span class="keyword">new</span> List&lt;GameObject&gt;();</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">Start</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="comment">// 测试</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">20</span>; ++i ) &#123;</span><br><span class="line">			<span class="keyword">this</span>.AddItem();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 添加列表项</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddItem</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		GameObject obj = Instantiate(Resources.Load&lt;GameObject&gt;(<span class="string">"Prefabs/ViewItem"</span>)) <span class="keyword">as</span> GameObject;</span><br><span class="line">		obj.transform.SetParent(transform);</span><br><span class="line">		obj.transform.localScale = Vector3.one;</span><br><span class="line">		listItem.Add(obj);</span><br><span class="line"></span><br><span class="line">		_AdjustContentSize();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">void</span> _AdjustContentSize() &#123;</span><br><span class="line">		<span class="keyword">var</span> grid = GetComponent&lt;GridLayoutGroup&gt;();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">float</span> height = listItem.Count * grid.cellSize.y; <span class="comment">// 所有子项的高度和</span></span><br><span class="line">		height += (listItem.Count - <span class="number">1</span>) * grid.spacing.y; <span class="comment">// 子项与子项之间的空隙和</span></span><br><span class="line">		grid.GetComponent&lt;RectTransform&gt;().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><br>### 大结局<br>现在运行看看效果吧<br><center><img src="/images/unity3d/ugui/10.jpg" alt=""></center>
+
       
     </div>
 
@@ -323,21 +437,27 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/UGUI/" rel="tag">#UGUI</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/simple-markdown/" rel="next" title="simple markdown">
-                <i class="fa fa-chevron-left"></i> simple markdown
+              <a href="/post/test2/" rel="next" title="test2">
+                <i class="fa fa-chevron-left"></i> test2
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/test2/" rel="prev" title="test2">
-                test2 <i class="fa fa-chevron-right"></i>
+              <a href="/post/unity3d/ugui/about-camera-size/" rel="prev" title="关于Unity 2D Camera Size的一些理解">
+                关于Unity 2D Camera Size的一些理解 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -387,8 +507,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="post/test/"
-           data-title="test" data-url="http://WalkingJager.github.io/post/test/">
+      <div class="ds-thread" data-thread-key="post/unity3d/ugui/ugui-scrollview/"
+           data-title="UGUI之自定义ScrollView" data-url="http://WalkingJager.github.io/post/unity3d/ugui/ugui-scrollview/">
       </div>
     
   </div>
@@ -491,7 +611,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用场景"><span class="nav-number">1.</span> <span class="nav-text">使用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建ScrollView"><span class="nav-number">2.</span> <span class="nav-text">创建ScrollView</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性：Rect-Transform"><span class="nav-number">2.1.</span> <span class="nav-text">属性：Rect Transform</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建Content"><span class="nav-number">3.</span> <span class="nav-text">创建Content</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性：Rect-Transform-1"><span class="nav-number">3.1.</span> <span class="nav-text">属性：Rect Transform</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加Grid-Layout-Group组件"><span class="nav-number">3.2.</span> <span class="nav-text">添加Grid Layout Group组件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建Scrollbar"><span class="nav-number">4.</span> <span class="nav-text">创建Scrollbar</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性：Rect-Transform-2"><span class="nav-number">4.1.</span> <span class="nav-text">属性：Rect Transform</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#属性：Scrollbar-Script"><span class="nav-number">4.2.</span> <span class="nav-text">属性：Scrollbar(Script)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#剪裁区域"><span class="nav-number">5.</span> <span class="nav-text">剪裁区域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支持拖动"><span class="nav-number">6.</span> <span class="nav-text">支持拖动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建内容子项Prefab"><span class="nav-number">7.</span> <span class="nav-text">创建内容子项Prefab</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
